@@ -31,13 +31,13 @@ function entrar() {
   });
 
   if (userValid) {
-    window.location.href = 'indicador.html';
-
+    // Gera e armazena o token e userLogado no localStorage
     let mathRandom = Math.random().toString(16).substr(2);
     let token = mathRandom + mathRandom;
-
     localStorage.setItem('token', token);
     localStorage.setItem('userLogado', JSON.stringify(userValid));
+
+    window.location.href = 'index.html';
   } else {
     userLabel.style.color = 'red';
     usuario.style.borderColor = 'red';

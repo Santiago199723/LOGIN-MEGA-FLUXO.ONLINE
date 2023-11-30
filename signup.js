@@ -94,7 +94,7 @@ function cadastrar() {
     msgError.innerHTML = '';
 
     setTimeout(() => {
-      window.location.href = 'indicador.html';
+      window.location.href = 'index.html';
     }, 3000);
   } else {
     msgError.setAttribute('style', 'display: block');
